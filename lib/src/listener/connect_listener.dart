@@ -49,7 +49,7 @@ class OnConnectListener {
     onUserTokenInvalid?.call();
   }
 
-  void onIpNotWhitelist(String? s){
+  void ipNotWhitelist(String? s){
     onIpNotWhitelist?.call(s);
   }
 
