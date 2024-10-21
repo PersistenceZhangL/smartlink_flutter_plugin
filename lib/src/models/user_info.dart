@@ -336,18 +336,18 @@ class FriendApplicationInfo {
 
   FriendApplicationInfo(
       {this.fromUserID,
-      this.fromNickname,
-      this.fromFaceURL,
-      this.toUserID,
-      this.toNickname,
-      this.toFaceURL,
-      this.handleResult,
-      this.reqMsg,
-      this.createTime,
-      this.handlerUserID,
-      this.handleMsg,
-      this.handleTime,
-      this.ex});
+        this.fromNickname,
+        this.fromFaceURL,
+        this.toUserID,
+        this.toNickname,
+        this.toFaceURL,
+        this.handleResult,
+        this.reqMsg,
+        this.createTime,
+        this.handlerUserID,
+        this.handleMsg,
+        this.handleTime,
+        this.ex});
 
   FriendApplicationInfo.fromJson(Map<String, dynamic> json) {
     fromUserID = json['fromUserID'];
