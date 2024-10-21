@@ -38,7 +38,7 @@ public class OnConnListener implements open_im_sdk_callback.OnConnListener {
     }
 
     @Override
-    public void OnIpNotWhitelist(String s) {
-        CommonUtil.emitEvent("connectListener", "OnIpNotWhitelist", s);
+    public void onIpNotWhitelist(String s) {
+        CommonUtil.emitEvent("connectListener", "onIpNotWhitelist", s);
     }
 }

@@ -82,6 +82,10 @@ vm_service
 3.3
 file:///C:/Users/zl082/AppData/Local/Pub/Cache/hosted/pub.flutter-io.cn/vm_service-14.2.1/
 file:///C:/Users/zl082/AppData/Local/Pub/Cache/hosted/pub.flutter-io.cn/vm_service-14.2.1/lib/
+flutter_openim_sdk
+3.0
+file:///D:/SmartLink/smartlink_flutter_plugin/
+file:///D:/SmartLink/smartlink_flutter_plugin/lib/
 sky_engine
 3.2
 file:///D:/flutter/flutter/bin/cache/pkg/sky_engine/
@@ -94,8 +98,4 @@ flutter_test
 3.3
 file:///D:/flutter/flutter/packages/flutter_test/
 file:///D:/flutter/flutter/packages/flutter_test/lib/
-flutter_openim_sdk
-3.0
-file:///D:/smartLink/open-im-sdk-flutter-main/open-im-sdk-flutter-main/
-file:///D:/smartLink/open-im-sdk-flutter-main/open-im-sdk-flutter-main/lib/
 2
