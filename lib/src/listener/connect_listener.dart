@@ -8,6 +8,7 @@ class OnConnectListener {
   Function()? onKickedOffline;
   Function()? onUserTokenExpired;
   Function()? onUserTokenInvalid;
+  Function(String? ip)? onIpNotWhitelist;
 
   OnConnectListener({
     this.onConnectFailed,
@@ -16,6 +17,7 @@ class OnConnectListener {
     this.onKickedOffline,
     this.onUserTokenExpired,
     this.onUserTokenInvalid,
+    this.onIpNotWhitelist
   });
 
   /// SDK failed to connect to the server
@@ -45,6 +47,10 @@ class OnConnectListener {
 
   void userTokenInvalid() {
     onUserTokenInvalid?.call();
+  }
+
+  void onIpNotWhitelist(String? s){
+    onIpNotWhitelist?.call(s);
   }
 
 }
