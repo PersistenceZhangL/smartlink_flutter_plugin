@@ -55,5 +55,8 @@ repositories {
 }
 
 dependencies {
-    implementation(name: 'libs/core-sdk-0.0.1', ext: 'aar') // 使用 AAR 文件
+    implementation fileTree(dir: 'libs', include: ['*.aar'])
+    // 本地依赖，现将aar复制到libs/io/openim/core-sdk/0.0.1/ 下，命名core-sdk-0.0.1.aar
+//    implementation 'io.openim:core-sdk:0.0.1@aar'
+//    implementation 'io.openim:core-sdk:3.8.1@aar'
 }

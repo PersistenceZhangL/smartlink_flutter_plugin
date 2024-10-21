@@ -7,6 +7,7 @@ repository: https://github.com/openimsdk/open-im-sdk-flutter
 environment:
   sdk: ">=3.0.0 <4.0.0"
   flutter: ">=1.20.0"
+publish_to: 'https://github.com/PersistenceZhangL/smartlink_flutter_plugin.githttps://github.com/PersistenceZhangL'
 
 dependencies:
   flutter:
