@@ -1,5 +1,3 @@
-import 'dart:nativewrappers/_internal/vm/lib/ffi_allocation_patch.dart';
-
 /// SDK Connection State Listener
 class OnConnectListener {
   Function(int? code, String? errorMsg)? onConnectFailed;
@@ -8,7 +6,6 @@ class OnConnectListener {
   Function()? onKickedOffline;
   Function()? onUserTokenExpired;
   Function()? onUserTokenInvalid;
-  Function(String? ip)? onIpNotWhitelist;
 
   OnConnectListener({
     this.onConnectFailed,
@@ -17,7 +14,6 @@ class OnConnectListener {
     this.onKickedOffline,
     this.onUserTokenExpired,
     this.onUserTokenInvalid,
-    this.onIpNotWhitelist
   });
 
   /// SDK failed to connect to the server
@@ -48,9 +44,4 @@ class OnConnectListener {
   void userTokenInvalid() {
     onUserTokenInvalid?.call();
   }
-
-  void ipNotWhitelist(String? s){
-    onIpNotWhitelist?.call(s);
-  }
-
 }

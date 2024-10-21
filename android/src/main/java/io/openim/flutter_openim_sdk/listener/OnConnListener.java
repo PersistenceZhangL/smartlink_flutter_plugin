@@ -36,5 +36,4 @@ public class OnConnListener implements open_im_sdk_callback.OnConnListener {
     public void onUserTokenInvalid(String s) {
         CommonUtil.emitEvent("connectListener", "onUserTokenInvalid", s);
     }
-
 }
