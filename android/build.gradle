@@ -24,6 +24,12 @@ buildscript {
         classpath 'com.android.tools.build:gradle:3.5.4'
     }
 }
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
 
 rootProject.allprojects {
     repositories {
@@ -52,5 +58,6 @@ android {
 dependencies {
     // 本地依赖，现将aar复制到libs/io/openim/core-sdk/0.0.1/ 下，命名core-sdk-0.0.1.aar
 //    implementation 'io.openim:core-sdk:0.0.1@aar'
-    implementation 'io.openim:core-sdk:3.8.1@aar'
+//    implementation 'io.openim:core-sdk:3.8.1@aar'
+    implementation(name: 'open_im_sdk', ext: 'aar')
 }
